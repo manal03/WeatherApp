@@ -9,7 +9,7 @@ async function handleWeatherAPI(){
     const weather = document.getElementById('weather');
     const weatherImg = document.getElementById('weatherImg')
 
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=ae3b51c2f7bfd78faebfb683c718576e&units=metric`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=[API_KEY]&units=metric`)
     if(!response.ok){
         throw new Error('Can not fetch this certain city')
     }       
